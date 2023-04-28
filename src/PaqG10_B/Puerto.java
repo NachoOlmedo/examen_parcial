@@ -15,14 +15,14 @@ public class Puerto {
         }
     }
 
-    public String toString(){
+    public String toString(Puerto hub){
         StringBuilder s = new StringBuilder();
         for(int i=0;i<F;i++){
             for(int j=0;j<C;j++){
                 if (this.almacen[i][j].getId() == -1){
-                    s.append("0       ");
+                    s.append(hub.almacen[F][C].getPeso());
                 }
-                else s.append("X       ");
+                else s.append(hub.almacen[F][C].getPeso());
             }
             s.append("\n");
         }

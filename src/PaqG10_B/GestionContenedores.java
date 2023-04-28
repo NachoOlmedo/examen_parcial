@@ -27,6 +27,7 @@ public class GestionContenedores extends JFrame{
     private JLabel logo_empresa;
     private JPanel Operaciones;
     private JTextArea estadoHub;
+    private JButton pesoTotalDelHubButton;
 
     public GestionContenedores(Puerto almacen){
         setContentPane(panelPrincipal);
@@ -121,6 +122,14 @@ public class GestionContenedores extends JFrame{
                 String Pais = (String) pais_cuantos.getSelectedItem();
                 suma = almacen.cantCont(Pais);
                 mostrar_nPaises.setText(String.valueOf(suma));
+            }
+        });
+        pesoTotalDelHubButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                peso_total errorRepetido = new peso_total(almacen);
+                actualizar(almacen);
+
             }
         });
     }
