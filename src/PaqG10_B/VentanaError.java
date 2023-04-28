@@ -15,3 +15,4 @@ public class VentanaError extends JFrame{
         errorLabel.setText(error);
     }
 }
+/**/

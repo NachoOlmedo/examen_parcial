@@ -145,3 +145,4 @@ public class GestionContenedores extends JFrame{
         GestionContenedores panel = new GestionContenedores(almacen);  //se abre el panel de gestion con el almacen creado
     }
 }
+/**/

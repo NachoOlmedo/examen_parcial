@@ -42,3 +42,4 @@ public class InfoContenedor extends JFrame{
         aduanasCheck.setSelected(hub.almacen[f][c].isAduana());
     }
 }
+/**/
